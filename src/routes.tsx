@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { DashboardLayout } from "@/components/layout/dashboard-layout";
 import { Login } from "@/pages/auth/login";
+import { ProductsPage } from "@/pages/products";
 import App from "./App";
 
 export const router = createBrowserRouter([
@@ -14,11 +15,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/products",
-        element: (
-          <div className="text-foreground p-10">
-            Página de Produtos (Em breve)
-          </div>
-        ),
+        element: <ProductsPage />,
       },
       {
         path: "/events",

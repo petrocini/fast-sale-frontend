@@ -17,6 +17,7 @@ export interface AddonGroup {
   id: number;
   name: string;
   description?: string;
+  is_active?: boolean;
   items: AddonItem[];
 }
 
@@ -35,6 +36,7 @@ export interface Product {
   name: string;
   description?: string;
   price: number;
+  cost_price?: number;
   stock_qty: number;
   is_active: boolean;
   addon_configs?: ProductAddonConfig[];
